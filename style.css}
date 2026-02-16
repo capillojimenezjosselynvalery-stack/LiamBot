@@ -1,0 +1,84 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#e5ddd5;
+}
+
+/* contenedor tipo teléfono */
+.app{
+    max-width:500px;
+    height:100vh;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    background:white;
+}
+
+.header{
+    background:#075E54;
+    color:white;
+    padding:15px;
+    text-align:center;
+    font-weight:bold;
+}
+
+.chat{
+    flex:1;
+    padding:10px;
+    overflow-y:auto;
+    background:#dcf8c6;
+}
+
+.message{
+    padding:8px 12px;
+    margin:5px 0;
+    border-radius:10px;
+    max-width:80%;
+    width:fit-content;
+    animation: aparecer 0.2s ease;
+}
+
+@keyframes aparecer{
+    from{transform:scale(0.8); opacity:0;}
+    to{transform:scale(1); opacity:1;}
+}
+
+.user{
+    background:#34b7f1;
+    color:white;
+    margin-left:auto;
+}
+
+.bot{
+    background:white;
+    margin-right:auto;
+}
+
+.input-area{
+    display:flex;
+    padding:10px;
+    background:#f0f0f0;
+}
+
+input{
+    flex:1;
+    padding:10px;
+    border-radius:20px;
+    border:1px solid #ccc;
+    outline:none;
+}
+
+button{
+    margin-left:5px;
+    padding:10px 15px;
+    border:none;
+    border-radius:50%;
+    background:#075E54;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
